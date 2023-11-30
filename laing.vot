@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE version="1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.ivoa.net/xml/VOTable/v1.3"
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
+ <DESCRIPTION>
+   VizieR Astronomical Server vizier.cds.unistra.fr
+    Date: 2023-05-18T01:18:45 [V7.296]
+   Explanations and Statistics of UCDs:			See LINK below
+   In case of problem, please report to:	cds-question@unistra.fr
+   In this version, NULL integer columns are written as an empty string
+   &lt;TD&gt;&lt;/TD&gt;, explicitely possible from VOTable-1.3
+ </DESCRIPTION>
+<!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
+<INFO ID="VERSION" name="version" value="7.296"/>
+<INFO ID="Ref" name="-ref" value="VIZ64657c592398ee"/>
+<INFO ID="MaxTuples" name="-out.max" value="200"/>
+<INFO name="queryParameters" value="15">
+-oc.form=dec
+-out.max=200
+-nav=cat:J/MNRAS/204/151&amp;tab:{J/MNRAS/204/151/table3}&amp;key:source=J/MNRAS/204/151/table3&amp;HTTPPRM:&amp;
+-c.eq=J2000
+-c.r=  2
+-c.u=arcmin
+-c.geom=r
+-source=J/MNRAS/204/151/table3
+-order=I
+-out=S178
+-out=FR
+-out=z
+-out=Bmag
+Simbad=Simbad
+NED=NED
+</INFO>
+
+<!--
+Execution Reports
+ -->
+
+<RESOURCE ID="yCat_72040151" name="J/MNRAS/204/151">
+  <DESCRIPTION>Bright radio sources at 178 MHz (3CRR) (Laing+ 1983)</DESCRIPTION>
+  <COOSYS ID="B1950" system="eq_FK4" equinox="B1950"/>
+  <TABLE ID="J_MNRAS_204_151_table3" name="J/MNRAS/204/151/table3">
+    <DESCRIPTION>Radio and optical data for the sample (June 1992 update by R. Laing)</DESCRIPTION>
+    <!-- Definitions of GROUPs and FIELDs -->
+
+<!-- +++No column could be found to attach a LINK in table: J/MNRAS/204/151/table3 -->
+    <FIELD name="S178" ucd="phot.flux.density;em.radio.100-200MHz" datatype="float" width="6" precision="1" unit="Jy"><!-- ucd="PHOT_FLUX_RADIO_175M" -->
+      <DESCRIPTION>Flux at 178MHz (KPW scale)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="FR" ucd="src.class" datatype="char" arraysize="2"><!-- ucd="CLASS_MISC" -->
+      <DESCRIPTION>[I II C T] Radio morphology (3)</DESCRIPTION>
+      <LINK href="http://vizier.cds.unistra.fr/viz-bin/VizieR?-6N&amp;-info=XML&amp;-out.add=.&amp;&amp;lt;&amp;quot;Note&amp;quot;&amp;catid=72040151&amp;notid=3&amp;-out.emph=${FR}"/>
+    </FIELD>
+    <FIELD name="z" ucd="src.redshift" datatype="float" width="7" precision="4"><!-- ucd="REDSHIFT_HC" -->
+      <DESCRIPTION>? Redshift</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="Bmag" ucd="phot.mag;em.opt.B" datatype="float" width="5" precision="2" unit="mag"><!-- ucd="PHOT_MAG_B" -->
+      <DESCRIPTION>? B (blue) magnitude</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+<DATA><TABLEDATA>
+<TR><TD>10.9</TD><TD>II</TD><TD>0.1560</TD><TD>17.70</TD></TR>
+<TR><TD>14.9</TD><TD>II</TD><TD>0.8404</TD><TD></TD></TR>
+<TR><TD>19.4</TD><TD>II</TD><TD>2.0120</TD><TD>18.44</TD></TR>
+<TR><TD>13.1</TD><TD>II</TD><TD>1.3510</TD><TD></TD></TR>
+<TR><TD>11.3</TD><TD>II</TD><TD>1.4690</TD><TD></TD></TR>
+<TR><TD>12.2</TD><TD>II</TD><TD>0.4050</TD><TD></TD></TR>
+<TR><TD>13.2</TD><TD>II</TD><TD>0.4820</TD><TD></TD></TR>
+<TR><TD>46.8</TD><TD>II</TD><TD>0.1740</TD><TD></TD></TR>
+<TR><TD>13.2</TD><TD>II</TD><TD>0.9380</TD><TD></TD></TR>
+<TR><TD>17.8</TD><TD>I</TD><TD>0.1952</TD><TD>19.06</TD></TR>
+<TR><TD>18.3</TD><TD>I</TD><TD>0.0167</TD><TD>13.28</TD></TR>
+<TR><TD>59.3</TD><TD>II</TD><TD>0.0595</TD><TD>16.35</TD></TR>
+<TR><TD>14.2</TD><TD>II</TD><TD>0.1810</TD><TD></TD></TR>
+<TR><TD>13.0</TD><TD>II</TD><TD>0.6897</TD><TD></TD></TR>
+<TR><TD>11.4</TD><TD>II</TD><TD>0.0677</TD><TD></TD></TR>
+<TR><TD>11.6</TD><TD>II</TD><TD>0.7950</TD><TD></TD></TR>
+<TR><TD>13.1</TD><TD>II</TD><TD>0.3950</TD><TD></TD></TR>
+<TR><TD>12.6</TD><TD>T</TD><TD>1.4700</TD><TD></TD></TR>
+<TR><TD>11.1</TD><TD>II</TD><TD>0.4373</TD><TD></TD></TR>
+<TR><TD>28.8</TD><TD>II</TD><TD>0.4250</TD><TD>18.20</TD></TR>
+<TR><TD>60.0</TD><TD>C</TD><TD>0.3670</TD><TD>16.62</TD></TR>
+<TR><TD>11.2</TD><TD>II</TD><TD>0.6207</TD><TD></TD></TR>
+<TR><TD>23.4</TD><TD>II</TD><TD>0.7350</TD><TD></TD></TR>
+<TR><TD>34.0</TD><TD>II</TD><TD>0.1860</TD><TD></TD></TR>
+<TR><TD>26.8</TD><TD>I</TD><TD>0.0215</TD><TD>13.93</TD></TR>
+<TR><TD>16.6</TD><TD>II</TD><TD>1.1760</TD><TD></TD></TR>
+<TR><TD>10.9</TD><TD>II</TD><TD>0.3102</TD><TD></TD></TR>
+<TR><TD>14.0</TD><TD>II</TD><TD>1.2380</TD><TD></TD></TR>
+<TR><TD>10.9</TD><TD>II</TD><TD>1.5750</TD><TD></TD></TR>
+<TR><TD>13.3</TD><TD>I</TD><TD>0.0324</TD><TD>15.94</TD></TR>
+<TR><TD>33.2</TD><TD>II</TD><TD>0.2559</TD><TD>19.32</TD></TR>
+<TR><TD>29.0</TD><TD>I</TD><TD>0.0255</TD><TD>14.46</TD></TR>
+<TR><TD>66.8</TD><TD>I</TD><TD>0.0177</TD><TD>12.60</TD></TR>
+<TR><TD>51.4</TD><TD>II</TD><TD>0.0306</TD><TD>15.64</TD></TR>
+<TR><TD>23.5</TD><TD>II</TD><TD>0.3056</TD><TD>18.81</TD></TR>
+<TR><TD>12.1</TD><TD>II</TD><TD>0.2060</TD><TD></TD></TR>
+<TR><TD>206.0</TD><TD>II</TD><TD>0.2177</TD><TD></TD></TR>
+<TR><TD>14.9</TD><TD>II</TD><TD>0.2140</TD><TD></TD></TR>
+<TR><TD>24.2</TD><TD>T</TD><TD>0.7590</TD><TD>18.13</TD></TR>
+<TR><TD>65.9</TD><TD>T</TD><TD>0.5450</TD><TD>17.25</TD></TR>
+<TR><TD>16.7</TD><TD>II</TD><TD>0.2771</TD><TD></TD></TR>
+<TR><TD>21.3</TD><TD>II</TD><TD>0.2384</TD><TD>19.58</TD></TR>
+<TR><TD>16.5</TD><TD>II</TD><TD>0.5191</TD><TD></TD></TR>
+<TR><TD>16.8</TD><TD>II</TD><TD>0.2920</TD><TD></TD></TR>
+<TR><TD>19.2</TD><TD>II</TD><TD>0.7680</TD><TD>17.05</TD></TR>
+<TR><TD>12.4</TD><TD>II</TD><TD>0.9200</TD><TD></TD></TR>
+<TR><TD>15.8</TD><TD>II</TD><TD>1.3820</TD><TD>19.35</TD></TR>
+<TR><TD>14.4</TD><TD>II</TD><TD>0.9940</TD><TD></TD></TR>
+<TR><TD>14.2</TD><TD>II</TD><TD>0.1187</TD><TD></TD></TR>
+<TR><TD>15.4</TD><TD>II</TD><TD>1.0630</TD><TD>18.05</TD></TR>
+<TR><TD>23.2</TD><TD>II</TD><TD>0.0356</TD><TD></TD></TR>
+<TR><TD>16.4</TD><TD>II</TD><TD>1.1970</TD><TD></TD></TR>
+<TR><TD>14.2</TD><TD>II</TD><TD>1.9523</TD><TD>18.65</TD></TR>
+<TR><TD>23.0</TD><TD>II</TD><TD>0.0599</TD><TD>16.62</TD></TR>
+<TR><TD>74.3</TD><TD>II</TD><TD>0.8710</TD><TD>18.20</TD></TR>
+<TR><TD>12.3</TD><TD>II</TD><TD>0.4580</TD><TD></TD></TR>
+<TR><TD>11.2</TD><TD>II</TD><TD>0.3920</TD><TD></TD></TR>
+<TR><TD>11.4</TD><TD>II</TD><TD>1.1120</TD><TD>18.76</TD></TR>
+<TR><TD>13.7</TD><TD>II</TD><TD>1.5340</TD><TD>18.10</TD></TR>
+<TR><TD>14.8</TD><TD>II</TD><TD>0.6840</TD><TD>18.58</TD></TR>
+<TR><TD>18.3</TD><TD>II</TD><TD>1.1090</TD><TD>17.76</TD></TR>
+<TR><TD>16.5</TD><TD>II</TD><TD>1.0490</TD><TD>20.00</TD></TR>
+<TR><TD>12.4</TD><TD>II</TD><TD>0.4110</TD><TD>18.48</TD></TR>
+<TR><TD>12.3</TD><TD>II</TD><TD>0.8970</TD><TD></TD></TR>
+<TR><TD>22.0</TD><TD>T</TD><TD>0.6680</TD><TD>19.00</TD></TR>
+<TR><TD>44.9</TD><TD>II</TD><TD>0.1744</TD><TD>18.72</TD></TR>
+<TR><TD>17.2</TD><TD>II</TD><TD>0.6100</TD><TD></TD></TR>
+<TR><TD>17.1</TD><TD>II</TD><TD>0.6850</TD><TD></TD></TR>
+<TR><TD>16.0</TD><TD>II</TD><TD>0.1368</TD><TD>18.35</TD></TR>
+<TR><TD>23.2</TD><TD>II</TD><TD>0.5800</TD><TD></TD></TR>
+<TR><TD>16.4</TD><TD>II</TD><TD>0.8200</TD><TD></TD></TR>
+<TR><TD>15.6</TD><TD>II</TD><TD>0.0581</TD><TD></TD></TR>
+<TR><TD>23.8</TD><TD>II</TD><TD>0.5524</TD><TD></TD></TR>
+<TR><TD>15.9</TD><TD>I</TD><TD>0.0013</TD><TD>9.30</TD></TR>
+<TR><TD>34.2</TD><TD>II</TD><TD>0.1848</TD><TD>18.04</TD></TR>
+<TR><TD>15.7</TD><TD>II</TD><TD>0.0989</TD><TD>17.18</TD></TR>
+<TR><TD>14.4</TD><TD>II</TD><TD>1.7810</TD><TD></TD></TR>
+<TR><TD>12.8</TD><TD>II</TD><TD>0.8100</TD><TD></TD></TR>
+<TR><TD>12.6</TD><TD>II</TD><TD>1.6170</TD><TD></TD></TR>
+<TR><TD>22.1</TD><TD>II</TD><TD>0.4280</TD><TD></TD></TR>
+<TR><TD>15.7</TD><TD>II</TD><TD>1.0290</TD><TD>17.70</TD></TR>
+<TR><TD>11.6</TD><TD>II</TD><TD>0.7489</TD><TD></TD></TR>
+<TR><TD>11.7</TD><TD>II</TD><TD>0.3110</TD><TD>15.70</TD></TR>
+<TR><TD>12.0</TD><TD>II</TD><TD>1.1050</TD><TD></TD></TR>
+<TR><TD>21.7</TD><TD>II</TD><TD>0.7340</TD><TD>18.13</TD></TR>
+<TR><TD>16.6</TD><TD>II</TD><TD>0.6520</TD><TD>16.50</TD></TR>
+<TR><TD>19.8</TD><TD>II</TD><TD>0.8240</TD><TD></TD></TR>
+<TR><TD>28.3</TD><TD>I</TD><TD>0.0208</TD><TD>13.81</TD></TR>
+<TR><TD>21.3</TD><TD>II</TD><TD>0.8108</TD><TD>21.35</TD></TR>
+<TR><TD>12.1</TD><TD>II</TD><TD>1.2720</TD><TD></TD></TR>
+<TR><TD>15.9</TD><TD>II</TD><TD>1.1440</TD><TD></TD></TR>
+<TR><TD>23.3</TD><TD>II</TD><TD>0.9700</TD><TD></TD></TR>
+<TR><TD>11.7</TD><TD>II</TD><TD>0.3710</TD><TD></TD></TR>
+<TR><TD>11.2</TD><TD>II</TD><TD>1.4000</TD><TD>19.00</TD></TR>
+<TR><TD>14.8</TD><TD>II</TD><TD>1.5190</TD><TD>18.80</TD></TR>
+<TR><TD>21.1</TD><TD>I</TD><TD>0.0029</TD><TD>10.54</TD></TR>
+<TR><TD>12.5</TD><TD>I</TD><TD>0.0837</TD><TD></TD></TR>
+<TR><TD>1144.5</TD><TD>I</TD><TD>0.0041</TD><TD>9.68</TD></TR>
+<TR><TD>18.0</TD><TD>II</TD><TD>0.4220</TD><TD></TD></TR>
+<TR><TD>19.9</TD><TD>II</TD><TD>0.5570</TD><TD>19.23</TD></TR>
+<TR><TD>13.1</TD><TD>II</TD><TD>0.7660</TD><TD></TD></TR>
+<TR><TD>25.8</TD><TD>II</TD><TD>0.9960</TD><TD></TD></TR>
+<TR><TD>12.3</TD><TD>II</TD><TD>0.2394</TD><TD></TD></TR>
+<TR><TD>12.3</TD><TD>II</TD><TD>0.0794</TD><TD>17.06</TD></TR>
+<TR><TD>17.8</TD><TD>C</TD><TD>1.0550</TD><TD>18.30</TD></TR>
+<TR><TD>27.3</TD><TD>T</TD><TD>0.8490</TD><TD>17.52</TD></TR>
+<TR><TD>20.6</TD><TD>I</TD><TD>0.2460</TD><TD></TD></TR>
+<TR><TD>13.1</TD><TD>II</TD><TD>0.9674</TD><TD></TD></TR>
+<TR><TD>11.0</TD><TD>II</TD><TD>0.7100</TD><TD></TD></TR>
+<TR><TD>13.8</TD><TD>I</TD><TD>0.0452</TD><TD>15.37</TD></TR>
+<TR><TD>11.2</TD><TD>II</TD><TD>1.7800</TD><TD></TD></TR>
+<TR><TD>91.0</TD><TD>II</TD><TD>0.4614</TD><TD>21.62</TD></TR>
+<TR><TD>14.2</TD><TD>I</TD><TD>0.0237</TD><TD>13.25</TD></TR>
+<TR><TD>12.9</TD><TD>II</TD><TD>0.3670</TD><TD></TD></TR>
+<TR><TD>19.5</TD><TD>II</TD><TD>0.2720</TD><TD></TD></TR>
+<TR><TD>12.2</TD><TD>II</TD><TD>0.1410</TD><TD>18.23</TD></TR>
+<TR><TD>17.1</TD><TD>I</TD><TD>0.0417</TD><TD>14.61</TD></TR>
+<TR><TD>24.7</TD><TD>T</TD><TD>0.9040</TD><TD>17.24</TD></TR>
+<TR><TD>60.1</TD><TD>I</TD><TD>0.0540</TD><TD>16.36</TD></TR>
+<TR><TD>11.6</TD><TD>I</TD><TD>0.1197</TD><TD></TD></TR>
+<TR><TD>19.4</TD><TD>I</TD><TD>0.1083</TD><TD>17.47</TD></TR>
+<TR><TD>13.4</TD><TD>II</TD><TD>0.7520</TD><TD></TD></TR>
+<TR><TD>16.7</TD><TD>II</TD><TD>0.1920</TD><TD></TD></TR>
+<TR><TD>14.7</TD><TD>II</TD><TD>0.0960</TD><TD></TD></TR>
+<TR><TD>11.0</TD><TD>II</TD><TD>1.6810</TD><TD></TD></TR>
+<TR><TD>17.2</TD><TD>II</TD><TD>1.2063</TD><TD></TD></TR>
+<TR><TD>17.0</TD><TD>II</TD><TD>0.8600</TD><TD></TD></TR>
+<TR><TD>22.2</TD><TD>II</TD><TD>0.0985</TD><TD></TD></TR>
+<TR><TD>30.3</TD><TD>II</TD><TD>0.5490</TD><TD></TD></TR>
+<TR><TD>11.7</TD><TD>I</TD><TD>0.0296</TD><TD>14.90</TD></TR>
+<TR><TD>11.9</TD><TD>II</TD><TD>0.5550</TD><TD>16.53</TD></TR>
+<TR><TD>12.5</TD><TD>II</TD><TD>0.9270</TD><TD>17.91</TD></TR>
+<TR><TD>11.8</TD><TD>II</TD><TD>0.4480</TD><TD></TD></TR>
+<TR><TD>51.1</TD><TD>I</TD><TD>0.0303</TD><TD>13.59</TD></TR>
+<TR><TD>12.9</TD><TD>II</TD><TD>0.6350</TD><TD></TD></TR>
+<TR><TD>11.0</TD><TD>II</TD><TD>0.7754</TD><TD></TD></TR>
+<TR><TD>13.5</TD><TD>C</TD><TD>0.9880</TD><TD>21.06</TD></TR>
+<TR><TD>12.5</TD><TD>II</TD><TD>0.7500</TD><TD>21.87</TD></TR>
+<TR><TD>11.6</TD><TD>I</TD><TD>0.0240</TD><TD></TD></TR>
+<TR><TD>11.8</TD><TD>T</TD><TD>0.5940</TD><TD>16.29</TD></TR>
+<TR><TD>11.9</TD><TD>I</TD><TD>0.1620</TD><TD></TD></TR>
+<TR><TD>14.5</TD><TD>II</TD><TD>0.2050</TD><TD></TD></TR>
+<TR><TD>14.9</TD><TD>II</TD><TD>0.3710</TD><TD>15.41</TD></TR>
+<TR><TD>12.3</TD><TD>II</TD><TD>0.8060</TD><TD></TD></TR>
+<TR><TD>12.3</TD><TD>II</TD><TD>1.0790</TD><TD></TD></TR>
+<TR><TD>11.4</TD><TD>II</TD><TD>1.2960</TD><TD></TD></TR>
+<TR><TD>12.3</TD><TD>II</TD><TD></TD><TD></TD></TR>
+<TR><TD>15.0</TD><TD>II</TD><TD>1.1320</TD><TD></TD></TR>
+<TR><TD>64.7</TD><TD>T</TD><TD>0.6910</TD><TD>17.05</TD></TR>
+<TR><TD>18.1</TD><TD>II</TD><TD>0.1605</TD><TD>18.88</TD></TR>
+<TR><TD>21.7</TD><TD>II</TD><TD>0.0578</TD><TD>15.87</TD></TR>
+<TR><TD>26.1</TD><TD>I</TD><TD>0.0177</TD><TD>14.10</TD></TR>
+<TR><TD>26.8</TD><TD>II</TD><TD>0.0908</TD><TD>17.05</TD></TR>
+<TR><TD>51.8</TD><TD>II</TD><TD>0.0561</TD><TD>14.98</TD></TR>
+<TR><TD>22.8</TD><TD>II</TD><TD>0.2010</TD><TD></TD></TR>
+<TR><TD>29.0</TD><TD>II</TD><TD>0.5720</TD><TD></TD></TR>
+<TR><TD>12.0</TD><TD>II</TD><TD>1.8050</TD><TD>18.18</TD></TR>
+<TR><TD>61.3</TD><TD>I</TD><TD>0.1016</TD><TD>17.13</TD></TR>
+<TR><TD>19.4</TD><TD>II</TD><TD>0.2145</TD><TD>19.60</TD></TR>
+<TR><TD>15.9</TD><TD>II</TD><TD>1.4800</TD><TD></TD></TR>
+<TR><TD>48.7</TD><TD>II</TD><TD>0.2900</TD><TD></TD></TR>
+<TR><TD>13.7</TD><TD>II</TD><TD>0.7080</TD><TD></TD></TR>
+<TR><TD>17.5</TD><TD>I</TD><TD>0.0262</TD><TD>14.74</TD></TR>
+<TR><TD>12.5</TD><TD>I</TD><TD>0.0171</TD><TD>14.16</TD></TR>
+<TR><TD>59.3</TD><TD>II</TD><TD>0.0811</TD><TD>16.86</TD></TR>
+<TR><TD>11.7</TD><TD>I</TD><TD>0.0243</TD><TD>13.95</TD></TR>
+<TR><TD>12.6</TD><TD>T</TD><TD>1.7570</TD><TD>18.52</TD></TR>
+<TR><TD>14.2</TD><TD>T</TD><TD>0.8590</TD><TD>16.57</TD></TR>
+<TR><TD>14.0</TD><TD>II</TD><TD>0.5427</TD><TD></TD></TR>
+<TR><TD>14.3</TD><TD>II</TD><TD>0.4280</TD><TD></TD></TR>
+<TR><TD>41.2</TD><TD>I</TD><TD>0.0293</TD><TD>14.29</TD></TR>
+<TR><TD>12.1</TD><TD>II</TD><TD>1.3360</TD><TD></TD></TR>
+<TR><TD>11.0</TD><TD>II</TD><TD>1.6530</TD><TD></TD></TR>
+</TABLEDATA></DATA>
+</TABLE>
+<INFO name="matches" value="173">matching records</INFO>
+
+<INFO name="Warning" value="No center provided++++"/>
+</RESOURCE>
+</VOTABLE>
